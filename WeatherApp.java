@@ -59,7 +59,7 @@ public class WeatherApp extends Application {
     }
 
     private void fetchWeatherData(String location) throws IOException {
-        String apiKey = "b51c10ee1a556a0139da32bfbee396a7"; // Replace with your API key
+        String apiKey = ""; // Replace with your API key
         String apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + apiKey + "&units=metric";
 
         HttpURLConnection connection = (HttpURLConnection) new URL(apiUrl).openConnection();
